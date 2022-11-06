@@ -1,0 +1,817 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.clearFloatx{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.overall{
+    width: 100%;
+    /* height: 4000px; */
+    height: auto;
+    /* border: 2px solid red; */
+}
+
+/* ------------------------------------ */
+    .TopHeader{
+        width: 100%;
+        height: 90px;
+        /* border: 2px dashed green; */
+        background: #e6f5fc;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        padding-left: 70px;
+    }
+
+        .logo{
+            width: 20%;
+            height: 100%;
+            /* border: 2px solid gold; */
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 130px;
+            position: relative;
+        }
+
+            .logo img{
+                width: 155px;
+                height: 127px;
+                position: absolute;
+                top: -8px;
+                left: 0;
+                padding-right: 20px;
+            }
+
+            #siteName{
+                font-weight: 700;
+                color: #00435f;
+                /* text-shadow: 1px 1px 10px #111; */
+                padding-left: 20px;
+            }
+
+        .topNavBar{
+            width: 70%;
+            height: 100%;
+            /* border: 2px solid brown; */
+            float: left;
+            position: absolute;
+            right: 0;
+        }
+
+            .links{
+                float: left;
+                height: 100%;
+                /* border: 2px solid rgb(65, 182, 100); */
+            }
+
+            .mainlinks{
+                width: 70%;
+            }
+                .mainlinks > div {
+                    /* width: 25%; */
+                    /* border: 1px solid #009fe1; */
+                    float: left;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                    .mainlinks > div a{
+                        text-decoration: none;
+                        color: #111;
+                        font-weight: 500;
+                        font-size: 1em;
+                        padding: 10px 22px;
+                        margin: 0 10px;
+                        /* border: 1px solid red; */
+                    }
+
+
+            .rightCTA{
+                width: 30%;
+                padding-left: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }        
+
+                .rightCTA a{
+                    text-decoration: none;
+                    color: #111;
+                    font-weight: 500;
+                    font-size: 1em;
+                    padding: 10px 22px;
+                }
+
+                a#signup{
+                    background: #009fe1;
+                    color: #fff;
+                    border-radius: 10px;
+                }
+                    .mainlinks > div a:hover, #login:hover{
+                        border-bottom: 2px solid #009fe1;
+                    }
+
+                    a#signup:hover{
+                        background:#00435f;
+                        box-shadow: 2px 2px 10px #657;
+                    }
+
+                    
+
+
+        /* UPPER LANDING */
+        .upperLanding{
+            width: 100%;
+            height: 570px;
+            /* border: 2px dashed green; */
+            background: #e6f5fc url(assets/home2.jpg) no-repeat fixed center center ;
+            background-size: cover;
+            /* background-size: 80%; */
+            margin-top: 88px;
+        }
+
+            .headText{
+                width: 50%;
+                height: 60%;
+                /* border: 2px dashed turquoise; */
+                padding: 70px;
+                /* padding-top: 70px; */
+                font-size: 1.5em;
+                color: #2b2b2b;
+            
+            }
+
+                .headText h1{
+                    /* outline: 1px solid #111; */
+                    /* background: #e6f5fc34; */
+                    text-shadow: 1px 1px 10px rgb(161, 169, 161);
+                }
+
+            .subText{
+                width: 50%;
+                height: 25%;
+                /* border: 2px solid greenyellow; */
+                padding-left: 70px;
+                /* background: #e6f5fc34; */
+            }
+
+                .subText > p{
+                    width: 100%;
+                    height: 50%;
+                    /* border: 1px solid #222; */
+                    font-size: 0.9em;
+                    font-weight: 500;
+                    text-shadow: 1px 1px 10px rgb(161, 169, 161);
+                    background: #e6f5fc34;
+                    padding: 10px;
+                }
+
+                .subText > div{
+                    height: 50%;
+                    display: flex;
+                    align-items: center;
+
+                }
+
+                .subText > div a{
+                    text-decoration: none;
+                    /* border: 1px solid red; */
+                    padding: 7px 25px;
+                    margin-right: 15px;
+                    border-radius: 5px;
+                    font-weight: 500;
+                }
+
+                a#getAppointment{
+                    background: #009fe1;
+                    color: #fff;
+                }
+
+                a#getAppointment:hover {
+                    background: #00435f;
+                    color: #fff;
+                    box-shadow: 2px 2px 15px rgb(85, 83, 83);
+                }
+
+                a#findSpecialist{
+                    background: transparent;
+                    border: 1px solid #111;
+                    color:#111;
+                    
+                }
+
+                a#findSpecialist:hover {
+                    color: #fff;
+                    background: #009fe1;
+                    border: transparent;
+                    box-shadow: 2px 2px 15px rgb(85, 83, 83);
+                }
+
+
+
+        /* ---------------MAIN BODY----------------------------- */
+        .theBody{
+            height: auto;
+            width: 100%;
+            /* border: 5px solid rgb(52, 46, 58); */
+            /* padding: 70px 0; */
+            /* background: #111; */
+        }
+
+
+            /* OUR STATS */
+            .stats{
+                width: 100%;
+                height: 220px;
+                /* border: 2px solid crimson; */
+                padding-left: 70px;
+                padding-top: 15px;
+            }
+
+                .stats > .statBox{
+                    width: 20%;
+                    height: 90%;
+                    /* border: 2px solid green; */
+                    border-radius: 10px;
+                    float: left;
+                    margin-right: 45px;
+                    position: relative;
+                }
+
+                    .statBox p{
+                        position: absolute;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    .statBox p:nth-child(1){
+                        top: 35%;
+                        font-size: 50px;
+                        font-weight: 500;
+                    }
+
+                    .statBox p:nth-child(2){
+                        top: 55%;
+                    }
+
+                .blue{
+                    background: #0071a0;
+                    color: #fff;
+
+                }
+
+                .black{
+                    background: #111;
+                    color: #fff;
+                }
+
+
+            /* OUR SERVICES */
+            .OurServices{
+                width: 100%;
+                height: 990px;
+                /* border: 2px solid #222; */
+                padding: 70px;
+            }
+
+                .OurServices h2{
+                    text-align: center;
+                    font-size: 2.2em;
+                    font-weight: bold;
+                }
+
+                .OurServices > p{
+                    text-align: center;
+                    padding: 15px 290px;
+                    font-weight: 400;
+                    margin-bottom: 55px;
+                    /* border: 1px solid #111; */
+                }
+
+                .OurServices > .serviceBox{
+                    width: 30%;
+                    height: 320px;
+                    /* border: 1px solid green; */
+                    float: left;
+                    border-radius: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 25px;
+                    margin-right: 37px;
+                    /* box-shadow: 1px 1px 20px #777; */
+                }
+
+                    .serviceBox > .innerBox{
+                        width: 90%;
+                        height: 90%;
+                        border: 1px solid rgb(179, 174, 174);
+                        border-radius: inherit;
+                        padding: 0 20px;
+                        box-shadow: 1px 1px 20px #777;
+                    }
+
+                        .innerBox > div:nth-child(1) {
+                            height: 40%;
+                            width: 50%;
+                            margin: 15px auto 0;
+                            /* border: 1px dashed rgb(70, 41, 70); */
+                            font-size: 4.5em;
+                            text-align: center;
+                        }
+
+                            .innerBox > div:nth-child(1) img {
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 20%;
+                            }
+
+                        .innerBox > div:nth-child(2){
+                            height: 60%;
+                            width: 100%;
+                            /* border: 1px dashed rgb(70, 41, 70); */
+                            /* padding-top: 12px; */
+                            text-align: center;
+                        }
+
+                            .innerBox h3{
+                                font-size: 1.2em;
+                                font-weight: 500;
+                                /* padding: 10px; */
+                                color: #00435f;
+                                padding: 10px 0;
+                            }
+
+                            .innerBox p{
+                                font-size: 0.9em;
+                                text-align: justify;
+                            }
+
+
+            /* GET APPOINTMENT */
+            .midCTA{
+                width: 100%;
+                height: 420px;
+                /* border: 4px solid #ff5edc; */
+                padding: 20px 70px;
+            }
+
+                .midCTA > div {
+                    width: 100%;
+                    height: 100%;
+                    /* border: 4px dashed yellow; */
+                    border-radius: 15px;
+                    padding-top: 100px;
+                    background: #009fe1;
+                }
+
+                    .midCTA > div p:nth-child(1) {
+                        /* border: 1px solid red; */
+                        font-size: 0.8em;
+                        text-align: center;
+                        margin-bottom: 15px;
+                        font-weight: 500;
+                    }
+
+                    .midCTA > div p:nth-child(2) {
+                        /* border: 1px solid blue; */
+                        text-align: center;
+                        font-size: 1.8em;
+                        font-weight: 500;
+                        padding: 0 390px;
+                        color: #fff;
+                    }
+
+                    .midCTA a{
+                        /* border: 1px solid red; */
+                        padding: 10px 60px;
+                        border-radius: 10px;
+                        text-decoration: none;
+                        color:  #fff;
+                        font-weight: 500;
+                        font-size: 1em;
+                        background: #111;
+                    }
+
+                    .midCTA a:hover{
+                        background: #54bfeb;
+                        color: #111;
+                    }
+
+                    .ctLink{ 
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 20px;
+                    }
+
+            /* WHAT  OUR CLIENTS SAY  */
+
+            .clientReview{
+                width: 100%;
+                height: 600px;
+                /* border: 2px dashed red; */
+                position: relative;
+                /* box-shadow: 1px 1px 20px #777; */
+            }
+
+                .clientReview > div:nth-child(1){
+                    height: 50%;
+                    width: 100%;
+                    /* border: 1px solid grey; */
+                    padding-top: 100px;
+                }
+
+                .clientReview h2{
+                    text-align: center;
+                    padding-bottom: 20px;
+                }
+
+                .clientReview p{
+                    text-align: center;
+                    padding: 0 380px;
+                }
+
+                .reviewOverflow{
+                    width: 50%;
+                    height: 50%;
+                    /* border: 2px solid firebrick; */
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translate(-50%);
+                    overflow-x: scroll;
+                    box-shadow: 1px 1px 20px #777;
+                }
+
+                .reviewOverflow::-webkit-scrollbar{
+                    display: none;
+                }
+
+                    .reviewOverflow > .overflowBox{
+                        /* width: 400%; */
+                        width: 2630px;
+                        height: 100%;
+                        /* background: yellowgreen; */
+                    }
+
+                        .reviewbox{
+                            /* width: 15%; */
+                            width: 580px;
+                            height: 100%;
+                            /* border: 4px solid crimson; */
+                            float: left;
+                            margin: 0 28px;
+                            border-radius: 10px;
+                            box-shadow: 2px 2px 15px #e6f5fc, 2px 2px 15px #445157;
+                        }
+
+                            .reviewboxTop{
+                                width: 100%;
+                                height: 50%;
+                                /* border: 1px solid red; */
+                            }
+
+                                .topLeft{
+                                    width: 50%;
+                                    height: 100%;
+                                    /* border: 1px solid green; */
+                                    float: left;
+                                }
+
+                                    .imgClient{
+                                        width: 40%;
+                                        height: 75%;
+                                        border-radius: 20%;
+                                        /* border: 1px solid blue; */
+                                        margin-top: 15px;
+                                        margin-left: 5px;
+                                        float: left;
+                                        /* display: inline-block; */
+                                    }
+
+                                        .imgClient img{
+                                            width: 100%;
+                                            height: 100%;
+                                            border-radius: inherit;
+                                        }
+
+                                    .NameCL{
+                                        font-size: 1.1em;
+                                        font-weight: 500;
+                                        margin-top: 35px;
+                                        margin-left: 15px;
+                                        /* border:2px solid red; */
+                                        width: 50%;
+                                        float: left;
+                                    }
+
+                                    .DateCL{
+                                        font-size: 0.7em;
+                                        padding-top: 10px;
+                                        /* font-style: italic; */
+                                    }
+
+                                .topRight{
+                                    width: 50%;
+                                    height: 100%;
+                                    /* border: 1px solid green; */
+                                    float: left;
+                                    padding-top: 32px;
+                                    padding-left: 10px;
+                                    color: goldenrod;
+                                }
+
+                            .reviewboxDown{
+                                width: 100%;
+                                height: 50%;
+                                /* border: 1px solid red; */
+                                padding: 20px 15px;
+                                font-size: 1em;
+                                font-style: italic;
+                                font-weight: 500;
+                            }
+
+
+
+            /* WHY YOU SHOULD TAKE OUR SERVICES */
+            .whyTakeOurService{
+                width: 100%;
+                height: 650px;
+                /* border: 5px solid rgb(65, 28, 28); */
+                position: relative;
+                padding: 70px 0;
+            }
+
+                .whyTakeOurService h2{
+                    text-align: center;
+                    padding-bottom: 15px;
+                }
+
+                .whyTakeOurService  > p{
+                    text-align: center;
+                    padding: 0 300px;
+                }
+
+                .uniqueWrap{
+                    height: 80%;
+                    width: 85%;
+                    /* border: 2px solid firebrick; */
+                    /* position:absolute; */
+                    /* bottom: 0; */
+                    margin: 70px auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                    .uniqLeft{
+                        width: 40%;
+                        height: 90%;
+                        /* border: 2px solid #222; */
+                        float: left;
+                        margin-right: 25px;
+                        border-radius: 15px;
+                    }
+
+                        .uniqLeft img{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: inherit;
+                        }
+
+                    .uniqRight{
+                        width: 40%;
+                        height: 100%;
+                        /* border: 2px solid #222; */
+                        float: left;
+                    }
+
+                        .uniqRight > div{
+                            height: 18%;
+                            width: 100%;
+                            border-left: 4px solid #009fe1;
+                            padding-left: 15px;
+                            margin: 22px 0;
+                        }
+
+                        .uniqRight > div h6{
+                            font-size: 1em;
+                            font-weight: 500;
+                            color: #00435f;
+                        }
+
+                        .uniqRight > div p{
+                            font-size: 0.8em;
+                        }
+
+
+
+
+            /* REQUEST A CALL BACK */
+            .requestCallBack{
+                width: 100%;
+                height: 450px;
+                /* border: 3px dashed teal; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .ReqFormWrap{
+                    width: 70%;
+                    height: 80%;
+                    /* border: 1px solid blue; */
+                    border-radius: 15px;
+                }
+
+                    .formLeft{
+                        width: 50%;
+                        height: 100%;
+                        /* border: 2px solid #111; */
+                        float: left;
+                        border-radius: 15px 0 0 15px;
+                        padding: 40px;
+                        /* padding-right: 40px; */
+                        /* padding-top: 40px; */
+                        background: #111;
+                        color: #fff;
+                    }
+
+                        .formLeft > p:nth-child(1) {
+                            font-size: 0.7em;
+                        }
+
+                        .formLeft > h5 {
+                            font-size: 2em;
+                            padding-bottom: 15px;
+                        }
+
+                        .formLeft > p:nth-child(3) {
+                            font-size: 0.7em;
+                        }
+
+
+
+                    .formRight{
+                        width: 50%;
+                        height: 100%;
+                        /* border: 2px solid #111; */
+                        float: left;
+                        border-radius: 0 15px 15px 0;
+                        background: #111;
+
+                    }
+
+                        .field{
+                            height: 25%;
+                            width: 100%;
+                            /* border: 1px solid hotpink; */
+                            display: flex;
+                            /* justify-content: center; */
+                            align-items: center;
+                            padding-left: 40px;
+                        }
+
+                       
+                        
+
+                            .field input[type="text"]{
+                                width: 65%;
+                                height: 40%;
+                                border-radius: 4px;
+                                border: none;
+                                padding-left: 20px;
+                            }
+
+                            .field input[type="submit"]{
+                                width: 40%;
+                                height: 40%;
+                                border-radius: 4px;
+                                border: none;
+                                background: #009fe1;
+                                color: #fff;
+                                font-weight: 500;
+                                cursor: pointer;
+                            }
+
+                            .field input[type="submit"]:hover{
+                                background: #00435f;
+                            }
+
+
+
+        footer{
+            width: 100%;
+            height: 500px;
+            /* border: 2px solid red; */
+            padding: 0 80px;
+            background: #b0e1f6;
+        }
+
+            .desc{
+                width: 30%;
+                height: 80%;
+                /* border: 2px dashed rebeccapurple; */
+                float: left;
+                padding-top: 35px;
+                margin-right: 20px;
+            }
+
+                .footLogo{
+                    /* border: 2px solid seagreen; */
+                    height: 40%;
+                    position: relative;
+                }
+
+                    .footLogo img{
+                        /* float: left; */
+                    }
+
+                    #FootName{
+                        /* float: left;
+                        padding-top: 50px; */
+                        position: absolute;
+                        top: 49px;
+                        left: 100px;
+                        font-weight: 700;
+                        color: #00435f;
+                        /* text-shadow: 1px 1px 20px #111; */
+                    } 
+
+                .desc p{
+                    font-size: 0.8em;
+                    line-height: 150%;
+                    font-weight: 500;
+                }
+
+                .socialIcons{
+                    height: 120px;
+                    /* border: 2px solid rebeccapurple; */
+                    padding-top: 10px;
+                }
+
+                    .socialIcons a {
+                        font-size: 1.2em;
+                        color: #111;
+                        margin: 30px 10px  0 0;
+                        text-decoration: none;
+                    }
+
+                    .socialIcons a:hover{
+                        color: #00435f;
+                    }
+
+
+            .footLink{
+                width: 20%;
+                height: 80%;
+                float: left;
+                /* border: 2px dashed rebeccapurple; */
+                padding-top: 75px;
+                margin-right: 20px;
+            }
+
+                .footLink h6{
+                    text-align: center;
+                    font-size: 1em;
+                    font-weight: 500;
+                    padding-bottom: 10px;
+                }
+
+                .footLink a{
+                    text-decoration: none;
+                    display: block;
+                    text-align: center;
+                    padding: 7px 15px;
+                    color: #111;
+                    font-size: 0.9em;
+                }
+
+                .footLink a:hover{
+                    background: #00435f;
+                    color: #fff;
+                }
+            .fullWidth{
+                width: 100%;
+                height: 20%;
+                border-top: 2px solid #222;
+                text-align: center;
+                font-size: 0.8em;
+                font-weight: 500;
+                padding-top: 40px;
+            }

@@ -1,0 +1,326 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	outline: none;
+}
+
+
+.clearFloatx{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+
+
+body{
+	background: #bbb;
+}
+
+
+
+.overall{
+    width: 100%;
+    /* height: 4000px; */
+    height: auto;
+    /* border: 2px solid red; */
+}
+
+/* ------------------------------------ */
+    .TopHeader{
+        width: 100%;
+        height: 90px;
+        /* border: 2px dashed green; */
+        background: #e6f5fc;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        padding-left: 70px;
+    }
+
+        .logo{
+            width: 20%;
+            height: 100%;
+            /* border: 2px solid gold; */
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 130px;
+            position: relative;
+        }
+
+            .logo img{
+                width: 155px;
+                height: 127px;
+                position: absolute;
+                top: -8px;
+                left: 0;
+                padding-right: 20px;
+            }
+
+            #siteName{
+                font-weight: 700;
+                color: #00435f;
+                /* text-shadow: 1px 1px 20px #111; */
+                padding-left: 20px;
+            }
+
+        .topNavBar{
+            width: 70%;
+            height: 100%;
+            /* border: 2px solid brown; */
+            float: left;
+            position: absolute;
+            right: 0;
+        }
+
+            .links{
+                float: left;
+                height: 100%;
+                /* border: 2px solid rgb(65, 182, 100); */
+            }
+
+            .mainlinks{
+                width: 70%;
+            }
+                .mainlinks > div {
+                    /* width: 25%; */
+                    /* border: 1px solid #009fe1; */
+                    float: left;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                    .mainlinks > div a{
+                        text-decoration: none;
+                        color: #111;
+                        font-weight: 500;
+                        font-size: 1em;
+                        padding: 10px 22px;
+                        margin: 0 10px;
+                        /* border: 1px solid red; */
+                    }
+
+
+            .rightCTA{
+                width: 30%;
+                padding-left: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }        
+
+                .rightCTA a{
+                    text-decoration: none;
+                    color: #111;
+                    font-weight: 500;
+                    font-size: 1em;
+                    padding: 10px 22px;
+                }
+
+                a#signup{
+                    background: #009fe1;
+                    color: #fff;
+                    border-radius: 10px;
+                }
+                    .mainlinks > div a:hover, #login:hover{
+                        border-bottom: 2px solid #009fe1;
+                    }
+
+                    a#signup:hover{
+                        background:#00435f;
+                        box-shadow: 2px 2px 10px #657;
+                    }
+
+	/* ------------------------------------------- */
+/* FORM */
+
+#formWrap{
+	width: 60%;
+	height: auto;
+	background-color: #00435f;
+	padding-bottom: 50px;
+	margin: 150px auto;
+    box-shadow: 1px 1px 10px rgb(100, 98, 98);
+    border-radius: 15px;
+}
+
+#formWrap h2{
+	text-align: center;
+	color: #E6F5FC;
+	padding: 40px 0;
+}
+
+.inputBox{
+	width: 60%;
+	padding: 2px;
+	border-bottom: 1px solid #555;
+	margin: 0 auto;
+	position: relative;
+}
+
+    .inputBox .fas{
+        color: #fff;
+    }
+
+.inputBox input{
+	width: 87%;
+	border: none;
+	padding: 10px;
+	background: transparent;
+	color: #fff;
+}
+
+.submitBox{
+	width: 60%;
+	padding: 2px;
+	margin: 10px auto;
+}
+
+.submitBox input{
+	width: 100%;
+	border: 2px groove #009fe1;
+	padding: 10px;
+	background: transparent;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 502;
+	letter-spacing: 1px;
+}
+
+.submitBox input:hover{
+	box-shadow: 1px 1px 10px #555, 1px 1px 10px rgb(63, 60, 60);
+	border: none;
+	background-color: #009fe1;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+::placeholder{
+	color: #888;
+	font-style: italic;
+}
+
+.anya{
+	position: absolute;
+	top: 30%;
+}
+
+#badeye{
+	display: none;
+
+}
+
+
+
+footer{
+    width: 100%;
+    height: 500px;
+    /* border: 2px solid red; */
+    padding: 0 80px;
+    background: #b0e1f6;
+}
+
+    .desc{
+        width: 30%;
+        height: 80%;
+        /* border: 2px dashed rebeccapurple; */
+        float: left;
+        padding-top: 35px;
+        margin-right: 20px;
+    }
+
+        .footLogo{
+            /* border: 2px solid seagreen; */
+            height: 40%;
+            position: relative;
+        }
+
+            .footLogo img{
+                /* float: left; */
+            }
+
+            #FootName{
+                /* float: left;
+                padding-top: 50px; */
+                position: absolute;
+                top: 49px;
+                left: 100px;
+                font-weight: 700;
+                color: #00435f;
+                /* text-shadow: 1px 1px 20px #111; */
+            } 
+
+        .desc p{
+            font-size: 0.8em;
+            line-height: 150%;
+            font-weight: 500;
+        }
+
+        .socialIcons{
+            height: 120px;
+            /* border: 2px solid rebeccapurple; */
+            padding-top: 10px;
+        }
+
+            .socialIcons a {
+                font-size: 1.2em;
+                color: #111;
+                margin: 30px 10px  0 0;
+                text-decoration: none;
+            }
+
+            .socialIcons a:hover{
+                color: #00435f;
+            }
+
+
+    .footLink{
+        width: 20%;
+        height: 80%;
+        float: left;
+        /* border: 2px dashed rebeccapurple; */
+        padding-top: 75px;
+        margin-right: 20px;
+    }
+
+        .footLink h6{
+            text-align: center;
+            font-size: 1em;
+            font-weight: 500;
+            padding-bottom: 10px;
+        }
+
+        .footLink a{
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            padding: 7px 15px;
+            color: #111;
+            font-size: 0.9em;
+        }
+
+        .footLink a:hover{
+            background: #00435f;
+            color: #fff;
+        }
+    .fullWidth{
+        width: 100%;
+        height: 20%;
+        border-top: 2px solid #222;
+        text-align: center;
+        font-size: 0.8em;
+        font-weight: 500;
+        padding-top: 40px;
+    }
+
+
+
+
+

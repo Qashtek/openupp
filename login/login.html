@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login | open upp</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="stylesheet" href="../fontawesome-free-6.2.0-web/css/all.css" />
+</head>
+
+<body>
+
+ <!-- OVERALL CONTAINER -->
+<div class="overall">
+	<!-- TOP HEADER -->
+	<header class="TopHeader">
+		<!-- LOGO -->
+		<div class="logo">
+			<img src="../assets/logoTransp.png" alt="" width="100%">
+			<span id="siteName">OPEN UPP</span>
+		</div>
+		
+		<!-- NAVIGATION LINKS -->
+		<nav class="topNavBar">
+			<div class="links mainlinks">
+				<div>
+					<a href="../index.html">Home</a>
+				</div>
+
+				<div>
+					<a href="">About</a>
+				</div>
+
+				<div>
+					<a href="">Services</a>
+				</div>
+
+				<div>
+					<a href="">Contact</a>
+				</div>
+
+				<div>
+					<a href="">Blog</a>
+				</div>
+				<span class="clearFloatx"></span>
+			</div>
+
+			<div class="links rightCTA">
+				<span>
+					<a href="login.html" id="login">Login</a>
+					<a href="../signup/signup.html" id="signup">Sign Up</a>
+				</span>
+			</div>
+		</nav>
+		<span class="clearFloatx"></span>
+	</header>
+
+	<!-- LOGIN FORM -->
+
+	<div id="formWrap">
+		<form>
+			<h2>Login</h2>
+
+			<div class="inputBox">
+				<i class="fas fa-envelope"></i>
+				<input type="email" name="email" id="userEmail" placeholder="enter email id here">
+			</div>
+
+			<div class="inputBox">
+				<i class="fas fa-key"></i>
+				<input type="password" name="password" id="paswd" placeholder="enter password here">
+				<span class="anya" onclick = "toggleEye()">
+					<i id="goodeye" class="fas fa-eye"></i>
+					<i id="badeye" class="fas fa-eye-slash"></i>
+				</span>
+			</div>
+
+			<div class="submitBox">
+				<input type="submit" name="" id="submitBtn" value= "login">
+			</div>
+		</form>
+		
+
+	</div>
+
+	 <!-- FOOTER OF DOCUMENT -->
+	 <footer>
+		<div class="grid desc">
+			<div class="footLogo">
+				<img src="../assets/logoTransp.png" alt="" width="40%">
+
+				<span id="FootName">OPEN UPP</span>
+
+				<span class="clearFloatx"></span>
+			</div>
+			
+
+			 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus explicabo fugit cum architecto impedit eligendi eveniet tenetur unde aut quidem?</p>
+
+			 <div class="socialIcons">
+				<a href="#">
+					<i class="fab fa-instagram"></i> 
+				</a>
+				<a href="">
+					<i class="fab fa-facebook"></i>
+				</a>
+				<a href="">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				<a href="">
+					<i class="fab fa-twitter"></i>
+				</a>
+			 </div>
+		</div>
+
+		<div class="grid footLink">
+			<h6>Quick Links</h6>
+			<a href="../index.html">Home</a>
+			<a href="">About</a>
+			<a href="">Services</a>
+			<a href="">Contact</a>
+			<a href="">Blog</a>
+		</div>
+
+		<div class="grid footLink" >
+			<h6>Services</h6>
+			<a href="">Counselling</a>
+			<a href="">Support Groups</a>
+			<a href="">Anonymous accountability</a>
+			<a href="">Therapy</a>
+			<a href="">Community</a>
+		</div>
+
+		<div class="grid footLink">
+			<h6>Location</h6>
+			<a href="">
+				10 Calabar Street, Aba, Nigeria.
+			</a>
+		</div>
+
+		<span class="clearFloatx"></span>
+
+		<div class="fullWidth">
+			&copy; 2022 | All Rights reserved.
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<script type="text/javascript">
+		
+
+		function toggleEye(){
+		let Psw = document.getElementById('paswd');
+		let openEye = document.getElementById('goodeye');
+		let closeEye = document.getElementById('badeye');
+
+			if(Psw.type === "password"){
+				Psw.type = "text";
+				closeEye.style.display = "block";
+				openEye.style.display = "none";
+			}
+			else{
+				Psw.type = "password";
+				closeEye.style.display = "none";
+				openEye.style.display = "block";
+			}
+		}
+
+
+	</script>
+</body>
+</html>
